@@ -1,11 +1,11 @@
 ## SETUP
-Tested on php 8.3, WSL, Ubuntu 20.x, require Composer + common php libs..
+Tested on php 8.3.6, WSL, Ubuntu 20.x, require Composer + common php libs..
 
 1. Clone the repository by your method
 2. ```cd TestApp```
 3. ```composer install```
 4. Copy ```.env.example``` and rename it to ```'.env'```
-5. Run local server```  .env``` if you need (by default you don't need)
+5. Edit ```.env``` if you need (by default you don't need)
 
 ## USE
 
