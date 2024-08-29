@@ -15,6 +15,10 @@ index.php contain all possible examples:
 3. Go to browser ```http://localhost:8000/```
 4. Check ```index.php``` how to use it
 
+## RUN TESTS
+1. ```cd TestApp```
+2. ```vendor/bin/tester .```
+
 ## LIMITATIONS
     
 - Doesn't have paginator
