@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace TestApp;
 
 use TestApp\Entity\{ListCoin, CoinOHLC};
-use TestApp\Exception\EndpointNotImplemented;
 use TestApp\Type\EndpointEnum;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
@@ -59,7 +58,7 @@ class Client
     {
         $resList = [];
 
-        foreach(json_decode($resBody) as $item) {
+        foreach (json_decode($resBody) as $item) {
             $resList[] = $this->serializer->deserialize(json_encode($item), $to, 'json');
         }
 
@@ -73,10 +72,10 @@ class Client
     {
         $resList = [];
 
-        foreach(json_decode($resBody) as $item) {
+        foreach (json_decode($resBody) as $item) {
             $vals = [];
 
-            for($x = 0; $x < $size; $x++) {
+            for ($x = 0; $x < $size; $x++) {
                 $vals[] = $item[$x];
             }
 

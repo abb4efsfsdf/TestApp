@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace TestApp;
 
-use TestApp\Provider\{Guzzle, IProvider};
-use TestApp\Entity\{ListCoin, CoinOHLC};
-use TestApp\Exception\EndpointNotImplemented;
-use TestApp\Type\EndpointEnum;
+use TestApp\Exception\HttpMethodNotImplemented;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\CurlHandler;
@@ -40,7 +37,7 @@ class HttpClient
         array $header = [],
         string $method = "GET"
     ): ResponseHandler {
-        if(strtolower($method) !== "get") {
+        if (strtolower($method) !== "get") {
             throw new HttpMethodNotImplemented();
         }
 
