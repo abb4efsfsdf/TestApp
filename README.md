@@ -4,7 +4,7 @@ Tested on php 8.3.6, WSL, Ubuntu 20.x, require Composer + common php libs..
 1. Clone the repository by your method
 2. ```cd TestApp```
 3. ```composer install```
-4. Copy ```.env.example``` and rename it to ```'.env'```
+4. Copy ```.env.example``` and rename it to ```.env```
 5. Edit ```.env``` if you need (by default you don't need)
 
 ## USE
@@ -13,7 +13,7 @@ index.php contain all possible examples:
 1. ```cd TestApp```
 2. Run local server ```php -S localhost:8000```
 3. Go to browser ```http://localhost:8000/```
-4. Check ```index.php``` how to use it
+4. Check ```index.php``` for see how to use it
 
 ## RUN TESTS
 1. ```cd TestApp```
